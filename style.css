@@ -1,0 +1,96 @@
+
+body{
+    background-image:url("image/etoile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+ @keyframes intro {
+     0% {opacity:1}
+     100% {opacity:0}
+}
+
+.intro{
+    position:absolute;
+    text-align: center;
+    bottom: 0;
+    margin: 0 auto;
+    width:2000px;
+    font-size: 50px;
+    color: #047589;
+    font-family:Impact, fantasy;
+    animation-name: intro;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes logo{
+    0% {opacity:0}
+    19% {opacity:0}
+    20% {transform:scale(1.0)}
+    60% {transform:scale(0.0)}
+    100% {transform:scale(0.0)}
+}
+
+img{
+    max-width:1500px;
+    text-align: center;
+    margin: 0 auto;
+    animation-name: logo;
+    animation-duration: 30s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+    
+}
+.logo{
+    position:absolute;
+    z-index: 3;
+    width:80%;
+    left: 10%;
+    right: 10%;
+    
+}
+
+@keyframes texte{
+    0%{opacity:0; top: 100%}
+    10% { opacity:1; top: 100%; }
+	100% { top: -2000%; opacity:0 }
+
+}
+
+.texte{
+    position:absolute;
+    bottom:0;
+    top: 100%;
+    font-size: 70px;
+    font-family:Impact, fantasy;
+    color: #FAB706;
+    text-align: justify;
+    left:15%;
+    right:15%;
+    width: 70%;
+    transform: perspective(800px) rotateX(45deg);
+    transform-origin: 50% 100%;
+    animation-name: texte;
+    animation-delay: 0s;
+    animation-duration: 100s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    z-index: 0;
+}
+.fade {
+    position: absolute;
+    width: 100%;
+    min-height: 1000px;
+    top: -25px;
+    background-image: linear-gradient(0deg, transparent, black 75%);
+    z-index: 1;
+  }
